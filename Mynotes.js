@@ -1,12 +1,14 @@
-console.log("hello india");
-showNotes();
+console.log("Welcome To My Notes");
+
+showNotes(); //To show notes at the beginning of the program
+
 //1.To add notes
 let addbtn = document.getElementById("addbtn");
-//console.log(addbtn);
 addbtn.addEventListener("click", function (e) {
+  let addtitle = document.getElementById("addtitle");
   let addtxt = document.getElementById("addtxt");
-  // console.log(addtxt);
-  if (addtxt.value.length == 0) {
+  if (addtxt.value.length == 0 || addtitle.value.length == 0) {
+    alert("Title or Note Field is empty Please write something!");
   } else {
     let notes = localStorage.getItem("notes");
     if (notes == null) {
@@ -14,10 +16,15 @@ addbtn.addEventListener("click", function (e) {
     } else {
       notesObj = JSON.parse(notes);
     }
-    notesObj.push(addtxt.value);
+    //Object to store Title nd Note
+    let Myobj = {                  
+      title: addtitle.value,
+      text: addtxt.value,
+    };
+    notesObj.push(Myobj);
     localStorage.setItem("notes", JSON.stringify(notesObj));
     addtxt.value = "";
-    //console.log(notesObj);
+    addtitle.value = "";
     showNotes();
   }
 });
@@ -35,10 +42,10 @@ function showNotes() {
     html += `
         <div class="my-cards">
         <h3 class="card-title">
-       NOTE ${index + 1}
+      ${element.title}
         </h3>
         <p class="my-notes">
-        ${element}    
+        ${element.text}    
         </p>
         <button class="deletebtn" id="${index}" onclick="deleteNote(this.id)">DELETE NOTE</button>
 
@@ -48,7 +55,7 @@ function showNotes() {
   if (notesObj.length != 0) {
     notesElm.innerHTML = html;
   } else {
-    notesElm.innerHTML = `Nothing to show! use "ADD A NOTE" section above to add a note.`;
+    notesElm.innerHTML = `Nothing to show! use "Add notes" section above to add a note.`;
   }
 }
 
@@ -69,22 +76,22 @@ function deleteNote(index) {
 //4.function to search a note
 
 let search = document.getElementById("searchtxt");
+let searchbtn = document.getElementById("clrbtn");
+searchbtn.addEventListener("click", function () {
+  search.value = "";
+});
 
 search.addEventListener("input", function () {
-
   let inputval = search.value.toLowerCase();
-  let notecards = document.getElementsByClassName('my-cards');
+  let notecards = document.getElementsByClassName("my-cards");
   Array.from(notecards).forEach(function (element) {
     let cardtxt = element.getElementsByTagName("p")[0].innerHTML;
     console.log(cardtxt);
     console.log(inputval);
-    if (cardtxt.includes(inputval)){
-      console.log("hooooooooooooooooooooooooooo");
+    if (cardtxt.includes(inputval)) {
       element.style.display = "block";
     } else {
       element.style.display = "none";
-      console.log("hnnnnnnnnnnnnnnnnnnooooooooooooooooooooooooooo");
-
     }
   });
 });

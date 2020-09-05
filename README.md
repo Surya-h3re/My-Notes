@@ -7,7 +7,7 @@ THIS PROJECT IS BUILD PURELY USING HTML,CSS, AND JAVASCRIPT LANGUAGES.
 THIS PROJECT USES LOCALSTORAGE TO STORE AND SHOW DATA.
 
 \\**ADD NOTES**//
-Use textarea to write your notes and to add the note in the site click "ADD NOTES" button,
+Use textarea to write your title and notes and to add the note in the site click "ADD NOTES" button,
 which is present below the textarea.
 
 \\**DELETE NOTE**//

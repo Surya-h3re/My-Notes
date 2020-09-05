@@ -1,200 +1,204 @@
-.nav{
-    background-color: rgb(32, 1, 61);
-    margin: 0px;
-     display: flex;
-     flex-wrap: wrap;
-     flex-grow: initial;
-    }
-.nav-ul1 a{
-    list-style-type: none;
-    float: left;
-    color: ivory;
-    text-decoration: none;
-    /* font-size: 1.25em; */
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: bold;
+.nav {
+  background-color: rgb(32, 1, 61);
+  margin: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: initial;
 }
-.nav-ul1 li:first-child{
-    padding-right: 12px;
-}
-.nav-ul1 li{
-    float: left;
-    padding: 8px;
-    display: block;
-}
-.nav-name{
-    display: block;
-    color: rgb(255, 255, 255);
-    font-size: 1em;
-    font-weight: inherit;
-    font-weight: bolder;
-    padding-right: 10%;
-    
-}
-.nav-ul2{
-   margin-left: auto;
-   padding-right: 10px;
-   margin-right: 20px;
+.nav-ul1 a {
+  list-style-type: none;
+  color: ivory;
+  text-decoration: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
 }
 
-#searchtxt{
-    height: 35px;
-    width: 15em;
-    border-radius: 5px;
-    border-color: darkred;
-    border-width: inherit;
-    margin-right: 15px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.nav-ul1 li {
+  float: left;
+  padding: 0.5rem;
+  display: block;
 }
-#searchbtn{
-    height: 30px;
-    border-radius: 5px;
-    background-color: white;
-    border-width: 2px;
-    border-color:lightblue;
+.nav-name {
+  color: rgb(255, 255, 255);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding-right: 12px;
+  font-weight: bolder;
 }
-input[type="search"]::placeholder{
-    text-align: center;
+.nav-ul2 {
+  margin-left: auto;
+  padding-right: 10px;
+  margin-right: 20px;
 }
-.container{
-    margin-right: 3%;
-    margin-left: 3%;
+#searchtxt {
+  margin-top: 0%;
+  margin-bottom: 0%;
+  height: 35px;
+  width: 15em;
+  border-radius: 5px;
+  border-color: darkred;
+  border-width: inherit;
+  margin-right: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#clrbtn {
+  height: 30px;
+  border-radius: 5px;
+  background-color: white;
+  border-width: 2px;
+  border-color: lightblue;
+}
+input[type="search"]::placeholder {
+  text-align: center;
+}
+.container {
+  margin-right: 3%;
+  margin-left: 3%;
   padding: 1% 5% 2% 5%;
-  box-shadow: 1px 2px 2px 1px rgba(0, 89, 255, 0.2); 
+  box-shadow: 1px 2px 2px 1px rgba(0, 89, 255, 0.2);
   border-radius: 2%;
   height: fit-content;
 }
-.welcome{
-    color:rgb(7, 123, 255);
-    text-decoration-color: aqua;
-    text-emphasis-color: rgb(0, 0, 131);
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.welcome {
+  color: rgb(7, 123, 255);
+  text-decoration-color: aqua;
+  text-emphasis-color: rgb(0, 0, 131);
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.card{
-
-    box-shadow: 0px 4px 8px 0px rgba(17, 0, 255, 0.4);
-    border-radius: 5px;
-    margin: auto;
-    width: 95%;
-    padding: 1%;
+.card {
+  box-shadow: 0px 4px 8px 0px rgba(17, 0, 255, 0.4);
+  border-radius: 5px;
+  margin: auto;
+  width: 95%;
+  padding: 1%;
 }
-.card:hover{
-    box-shadow:2px 8px 16px 2px rgba(17, 0, 255, 0.4);
+.card:hover {
+  box-shadow: 2px 8px 16px 2px rgba(17, 0, 255, 0.4);
 }
-.add-title{
-    color: rgb(0, 13, 202);
-    text-shadow: rgb(7, 123, 255),rgba(134, 33, 241, 0.5);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-decoration-style: wavy;
-    padding-left: 5%;
+.add-title {
+  color: rgb(0, 13, 202);
+  text-shadow: rgb(7, 123, 255), rgba(134, 33, 241, 0.5);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration-style: wavy;
+  padding-left: 5%;
+  margin-bottom: 0.3rem;
 }
-#addtxt{
-    display: block;
-    margin-left: 5%;
-    margin-right: 5% ;
-    resize: none;
-    width: 90%;
-    height: 20vh;
-    border-radius: 5px;
-    border-width: 1px;
-    border-color: rgb(49, 0, 226);
-    font-family: fantasy;
+#addtitle {
+  display: block;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 0.5%;
+  resize: none;
+  font-size: 1rem;
+  height: 1.5rem;
+  width: 90%;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: rgb(49, 0, 226);
+  font-family: fantasy;
 }
-
-#addbtn{
-    color:white;
-    font-weight: bold;
-    margin-left: auto;
-    margin-right: auto;
-    margin: 3% 5%;
-    height: 30px;
-    border-radius: 5px;
-    background-color: rgba(6, 10, 224, 0.979);
-    border-width: 1px;
-    border-color:rgb(95, 125, 192); 
+#addtxt {
+  display: block;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 1%;
+  font-size: 0.75rem;
+  resize: none;
+  width: 90%;
+  height: 20vh;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: rgb(49, 0, 226);
+  font-family: fantacy;
 }
-#addbtn:hover{
-    background-color: rgba(250, 43, 43, 0.979);
-    border-color:rgba(241, 77, 77, 0.719); 
-    
+#addbtn {
+  color: white;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 3% 5%;
+  height: 30px;
+  border-radius: 5px;
+  background-color: rgba(6, 10, 224, 0.979);
+  border-width: 1px;
+  border-color: rgb(95, 125, 192);
 }
-
-.card2{
-    box-shadow: 0px 4px 8px 0px rgba(255, 29, 29, 0.4);
-    border-radius: 5px;
-    margin-top: 3%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 95%;
-    padding: 1%;
+#addbtn:hover {
+  background-color: rgba(250, 43, 43, 0.979);
+  border-color: rgba(241, 77, 77, 0.719);
 }
-.card2:hover{
-    box-shadow: 2px 8px 16px 2px rgba(255, 29, 29, 0.4);
-    
+.card2 {
+  box-shadow: 0px 4px 8px 0px rgba(255, 29, 29, 0.4);
+  border-radius: 5px;
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  padding: 1%;
 }
-.your-notes{
-    color: rgb(255, 15, 15);
-    text-shadow: rgb(7, 123, 255),rgba(134, 33, 241, 0.5);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-decoration-style: wavy;
-    padding-left: 5%;
+.card2:hover {
+  box-shadow: 2px 8px 16px 2px rgba(255, 29, 29, 0.4);
 }
-#notes{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 100%;
-    ali
-
+.your-notes {
+  color: rgb(255, 15, 15);
+  text-shadow: rgb(7, 123, 255), rgba(134, 33, 241, 0.5);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration-style: wavy;
+  padding-left: 5%;
 }
-#notes div{
-   align-self: stretch;
-background-color: rgba(255, 137, 176, 0.05);
-box-shadow: 0px 4px 8px 0px rgba(67, 105, 231, 0.4);
-    border-radius: 5px;
-    margin-top: 2%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
-    padding: 1%;
-    display: inline-block;
-    overflow-wrap: break-word;
-    
+#notes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
 }
-#notes div:hover{
-    box-shadow: 2px 8px 16px 2px rgba(67, 105, 231, 0.4);
+#notes div {
+  align-self: start;
+  align-self: stretch;
+  background-color: rgba(255, 137, 176, 0.05);
+  box-shadow: 0px 4px 8px 0px rgba(67, 105, 231, 0.4);
+  border-radius: 5px;
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  padding: 1%;
+  display: inline-block;
+  overflow-wrap: break-word;
 }
-.card-title{
-    color: rgb(255, 21, 40);
-    font: bold;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
+#notes div:hover {
+  box-shadow: 2px 8px 16px 2px rgba(67, 105, 231, 0.4);
 }
-
-.my-notes{
-    padding: 1%;
-    margin: auto;
-    line-height: normal;
-    color: blue;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: justify;
+.card-title {
+  color: rgb(255, 21, 40);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
-.deletebtn{
-    color:white;
-    font-weight: bold;
-    margin-left: auto;
-    margin-right: auto;
-    margin: 3% 5%;
-    height: 30px;
-    padding: 1%;
-    border-radius: 5px;
-    background-color: rgba(250, 43, 43, 0.979);
-    border-width: 1px;
-    border-color:rgba(241, 77, 77, 0.719); 
+.my-notes {
+  padding: 1%;
+  margin: auto;
+  line-height: normal;
+  color: blue;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: justify;
 }
-.deletebtn:hover{
-    background-color: rgba(6, 10, 224, 0.979);
-    border-color:rgb(95, 125, 192);
+.deletebtn {
+  color: white;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 3% 5%;
+  height: 30px;
+  padding: 1%;
+  border-radius: 5px;
+  background-color: rgba(250, 43, 43, 0.979);
+  border-width: 1px;
+  border-color: rgba(241, 77, 77, 0.719);
+}
+.deletebtn:hover {
+  background-color: rgba(6, 10, 224, 0.979);
+  border-color: rgb(95, 125, 192);
 }
